@@ -5,10 +5,11 @@ export async function POST(req, res) {
     let result = await req.json();
     console.log("Received JSON data:", result);
 
-    let url = process.env.BACKEND_URL;
+    let url = 'https://cc5d-106-76-69-38.ngrok-free.app';
+    // let url = process.env.BACKEND_URL;
     let token = "Bearer 6|yE2C2i1ALf9T3fj318LjiXLXHTnpuFbNDvw05yBVe00035e2";
 
-    let sendData = await fetch(`${url}/api/flow-sheets-vital-signs`, {
+    let sendData = await fetch(`http://127.0.0.1:8000/api/flow-sheets-vital-signs`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

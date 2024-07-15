@@ -6,7 +6,7 @@ const Homepage = () => {
   return (
     <div>
     
-      <Notification color={"red"} text={"Hii"}/>
+      {/* <Notification color={"red"} text={"Hii"}/> */}
       <Form params={122}/>
     </div>
   );

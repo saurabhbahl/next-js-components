@@ -170,14 +170,14 @@
 // export default InputField;
 
 import React, { useState, useEffect } from "react";
-
+import { ZodIssue } from "zod";
 interface InputFieldProps {
   id: string;
   label: string;
   type: string;
   name: string;
   value: string | number;
-  error?: { path: string[]; message: string }[];
+  error?: { path: string[] | ZodIssue[]; message: string }[];
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 

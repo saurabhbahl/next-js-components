@@ -1,6 +1,6 @@
-import { NextResponse } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
 
-export async function POST(req, res) {
+export async function POST(req:NextRequest,) {
   try {
     let result = await req.json();
     console.log("Received JSON data:", result);

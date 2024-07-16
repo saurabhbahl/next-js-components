@@ -14,10 +14,10 @@ const DateField: React.FC<DateFieldProps> = ({ formData, handleChange }) => {
       {date ? (
        <input
        style={{
-        appearance: 'none', // Remove default styling
-        background: 'none', // Make background transparent
-        border: 'none', // Remove border if desired
-        outline: 'none' // Remove outline
+        appearance: 'none', 
+        background: 'none', 
+        border: 'none', 
+        outline: 'none' 
       }}
        required
        type="date"
@@ -27,7 +27,6 @@ const DateField: React.FC<DateFieldProps> = ({ formData, handleChange }) => {
        onChange={handleChange}
        onMouseEnter={() => setDate(true)}
        onMouseLeave={() => setDate(false)}
-       style={{ background: 'none' }} 
      />
      
       ) : (
@@ -40,16 +39,7 @@ const DateField: React.FC<DateFieldProps> = ({ formData, handleChange }) => {
         />
       )}
 
-      {/* <input
-        required
-        type="date"
-        name="date"
-        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-        value={formData.date}
-        onChange={handleChange}
-        onMouseEnter={() => setDate(true)}
-        onMouseLeave={() => setDate(false)}
-      /> */}
+    
     </div>
   );
 };
